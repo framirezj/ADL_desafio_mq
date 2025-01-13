@@ -1,1 +1,33 @@
 /* mi css */
+
+/* grid areas */
+
+header{
+    grid-area: h;
+    background-color: blueviolet;
+}
+section{
+    grid-area: s;
+    background-color: grey;
+}
+main{
+    grid-area: m;
+}
+footer{
+    grid-area: f;
+    background-color: blueviolet;
+}
+
+/* grid layout */
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+        "h"
+        "s"
+        "m"
+        "f";
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px 50px 50px;
+}
