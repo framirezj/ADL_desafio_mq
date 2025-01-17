@@ -1,78 +1,99 @@
 /* mi css */
 
-
 /* fonts */
 
 .roboto-light {
-    font-family: "Roboto", serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-bold {
-    font-family: "Roboto", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
 /* grid areas */
 
-header{
-    grid-area: h;
-    padding: 0 1rem 0 1rem ;
+header {
+  grid-area: h;
+  padding: 0 1rem 0 1rem;
 }
-section{
-    grid-area: s;
-    background-color: #dcbdff;
+section {
+  grid-area: s;
+  background-color: #dcbdff;
 }
-main{
-    grid-area: m;
+main {
+  grid-area: m;
 }
-footer{
-    grid-area: f;
-    background-image: url("../img/footer.jpg");
-    background-size: cover;
-    background-position: bottom;
+footer {
+  grid-area: f;
+  background-image: url("../img/footer.jpg");
+  background-size: cover;
+  background-position: bottom;
 }
 
 /* grid layout */
 
-.grid-container{
-    display: grid;
-    grid-template-areas:
-        "h"
-        "s"
-        "m"
-        "f";
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "h"
+    "s"
+    "m"
+    "f";
 
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 50px 50px 200px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 50px 200px;
 }
 
-
 /* header */
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* logo */
-.logo{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: #ffc17d;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #ffc17d;
 }
 
 .logo img {
-    width: 3rem;    
-    
+  width: 3rem;
+}
+
+/* filtro */
+
+.filtro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 1rem 0;
+}
+
+.filtro p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+select {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 80%;
+  background-color: white; 
+  color: #333; 
+  border-radius: 5px;
+  cursor: pointer;
 }
