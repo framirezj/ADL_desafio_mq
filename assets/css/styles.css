@@ -29,6 +29,10 @@ body {
 header {
   grid-area: h;
   padding: 0 1rem 0 1rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid #dcbdff;
 }
 section {
   grid-area: s;
