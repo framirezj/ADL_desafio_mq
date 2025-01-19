@@ -67,6 +67,10 @@ nav {
   align-items: center;
 }
 
+#menu-opciones{
+  display: none;
+}
+
 /* logo */
 .logo {
   display: flex;
@@ -197,6 +201,38 @@ footer p {
     grid-template-rows: 1fr 8fr 2fr;
     min-height: 100vh;
     max-height: 100vh;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* header */
+  #boton-burguer{
+    display: none;
+  }
+
+  nav{
+    padding-top: 1rem;
+    gap: 1rem;
+  }
+
+  #menu-opciones{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+  }
+
+
+  nav ul li a{
+    text-decoration: none;
+    color: #ffc17d;
   }
 
   .cards {
